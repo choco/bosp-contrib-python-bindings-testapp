@@ -1,0 +1,108 @@
+<?xml version="1.0"?>
+<BarbequeRTRM recipe_version="0.8">
+	<application priority="4">
+		<platform id="org.linux.cgroup">
+			<awms>
+				<awm id="0" name="wm0" value="1">
+					<resources>
+						<cpu>
+							<pe qty="25"/>
+							<mem units="Mb" qty="2"/>
+						</cpu>
+					</resources>
+				</awm>
+				<awm id="1" name="wm1" value="2">
+					<resources>
+						<cpu>
+							<pe qty="50"/>
+							<mem units="Mb" qty="5"/>
+						</cpu>
+					</resources>
+				</awm>
+				<awm id="2" name="wm2" value="4">
+					<resources>
+						<cpu>
+							<pe qty="100"/>
+							<mem units="Mb" qty="10"/>
+						</cpu>
+					</resources>
+				</awm>
+			</awms>
+		</platform>
+		<platform id="org.linux.cgroup" hw="exynos_5422">
+			<awms>
+				<awm id="0" name="wm0" value="1">
+					<resources>
+						<cpu id="0">
+							<pe qty="150"/>
+						</cpu>
+					</resources>
+				</awm>
+				<awm id="1" name="wm1" value="2">
+					<resources>
+						<cpu id="0">
+							<pe qty="300"/>
+						</cpu>
+					</resources>
+				</awm>
+				<awm id="2" name="wm2" value="4">
+					<resources>
+						<cpu id="0">
+							<pe qty="400"/>
+						</cpu>
+					</resources>
+				</awm>
+			</awms>
+		</platform>
+		<platform id="com.st.sthorm">
+			<awms>
+				<awm id="0" name="low" value="1">
+					<resources>
+						<sys>
+							<acc id="0">
+								<grp>
+									<pe qty="1600"/>
+								</grp>
+							</acc>
+						</sys>
+					</resources>
+				</awm>
+				<awm id="1" name="half" value="2">
+					<resources>
+						<sys>
+							<acc id="0">
+								<grp>
+									<pe qty="3200"/>
+								</grp>
+							</acc>
+						</sys>
+					</resources>
+				</awm>
+				<awm id="2" name="high" value="3">
+					<resources>
+						<sys>
+							<acc id="0">
+								<grp>
+									<pe qty="4800"/>
+								</grp>
+							</acc>
+						</sys>
+					</resources>
+				</awm>
+				<awm id="3" name="full" value="4">
+					<resources>
+						<sys>
+							<acc id="0">
+								<grp>
+									<pe qty="6400"/>
+								</grp>
+							</acc>
+						</sys>
+					</resources>
+				</awm>
+			</awms>
+
+		</platform>
+	</application>
+</BarbequeRTRM>
+<!-- vim: set tabstop=4 filetype=xml : -->

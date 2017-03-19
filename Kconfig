@@ -1,0 +1,9 @@
+
+config CONTRIB_TESTING_PYTHON_BINDINGS_TESTAPP
+    bool "bbque-python-bindings-testapp"
+    select TESTINGS
+    select BBQUE_BINDINGS_PYTHON
+    default n
+    ---help---
+    Build the BarbequeRTRM python test application. This is a dummy application
+    which is useful to see how to create applications for the framework in Python
